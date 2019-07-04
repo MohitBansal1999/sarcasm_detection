@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block code %}
+
+    <form class="form-container" action="{{ url_for('home') }}" >
+    	<h4>Sarcasm Detector</h4>
+      <div class="form-group">
+            <h3>This headline shows {{ status }}</h3>
+      </div>
+      <button type="submit" name="sub" value="send" class="btn btn-primary btn-block">back</button>
+    </form>
+{% endblock %}

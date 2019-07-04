@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block code %}
+<form class="form-container" action="{{ url_for('output') }}" method="POST">
+  <div class="form-group">
+  	<h4>Sarcasm Detector</h4>
+      <label> Headline </label>
+      <input type="text" autocomplete="off" class="form-control" name="headline" aria-describedby="Help" placeholder="Enter headline">
+      <small id="Help" class="form-text text-muted">We'll detect your mentality.</small>
+  </div>
+  <button type="submit" name="sub" value="send" class="btn btn-primary btn-block">Submit</button>
+</form>
+{% endblock %}
